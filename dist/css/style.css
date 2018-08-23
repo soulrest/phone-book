@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Arimo', Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #03212f;
+}
+
+/*
+ Menu
+*/
+
+.container {
+    width: 100%;
+    max-width: 665px;
+    min-width: 375px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #10a5ee;
+    text-align: center;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+h1.phone-book-title {
+    font-family: 'Orbitron', Helvetica sans-serif;
+    font-weight: 900;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+}
+
+.phone-book-controls {
+    padding: 5px;
+}
+
+/*
+ Contacts
+*/
+
+.contact {
+    width: 100%;
+    margin: 10px auto;
+    border-bottom: 1px solid #03212f;
+    padding: 5px;
+    background-color: #ceedfc;
+}
+
+.contact:last-child {
+    border: none;
+}
+
+.contact-main-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.contact-name {
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    color: #03212f;
+}
+
+.contact-number {
+    padding: 5px;
+    background-color: #10a5ee;
+    color: white;
+    border-radius: 10px;
+}
+
+.contact-address {
+    font-size: 65%;
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
+}
+
+select {
+    margin-bottom: 5px;
+}
+
+select,
+input {
+    width: 45%;
+    padding: 5px;
+}
+
+/*
+ Loader
+*/
+
+.loader {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.loader svg {
+    height: 50px;
+    width: 50px;
+    fill: #10a5ee;
+    transform-origin: 44% 50%;
+    animation: rotate 1.5s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
